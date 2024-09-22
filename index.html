@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project_5</title>
     <link rel="stylesheet" href="assets/CSS/style.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="font-lexend">
+    <!-- Top-Nav starts here -->
+    <div class="sticky top-0 z-10 bg-white bg-opacity-50 backdrop-blur-lg">
+        <nav class="flex justify-between items-center py-10 lg:px-52 px-4 bg-[#F9F7F3] bg-opacity-50 backdrop-blur-lg">
+            <button class="bg-primary text-xl px-8 py-1 font-bold rounded-xl ">Blog</button>
+            <div class="flex items-center justify-between ml-4">
+                <img class="w-8 lg:w-[30px]" src="./assets/img/logo.png" alt="">
+                <h1 class="lg:text-3xl font-bold lg:ml-4 ">Donate Bangladesh</h1>
+            </div>
+            <div class="flex items-center">
+                <img class="w-8 " src="./assets/img/coin.png" alt="">
+                <h1 class="text-xl font-bold text-secondary ml-3">
+                    <span id="balance">5500</span> BDT
+                </h1>
+            </div>
+        </nav>
+        <div class="flex justify-center mt-14 pb-5 space-x-14 ">
+                <button id="donation" class="bg-primary text-xl font-bold px-6 py-2 rounded-xl">Donation</button>
+                <button id="history" class="border-2 text-xl font-bold px-8 py-2 rounded-xl">History</button>
+        </div>
+
+    </div>
+    <!-- Top-Nav Ends Here -->
+
+
+
 
 
     <script src="assets/JS/main.js"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#B4F461',
+                secondary: '#111111B3',
+              },
+              fontFamily: {
+                lexend: ['"Lexend"', 'sans-serif'],
+            },
+            }
+          }
+        }
+      </script>
+
 </body>
 </html>
