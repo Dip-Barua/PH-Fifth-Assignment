@@ -12,7 +12,7 @@
     <!-- Top-Nav starts here -->
     <div class="sticky top-0 z-10 bg-white bg-opacity-50 backdrop-blur-lg">
         <nav class="flex justify-between items-center py-10 lg:px-52 px-4 bg-[#F9F7F3] bg-opacity-50 backdrop-blur-lg">
-            <button class="bg-primary text-xl px-8 py-1 font-bold rounded-xl ">Blog</button>
+            <button id="blog" class="bg-primary text-xl px-8 py-1 font-bold rounded-xl ">Blog</button>
             <div class="flex items-center justify-between ml-4">
                 <img class="w-8 lg:w-[30px]" src="./assets/img/logo.png" alt="">
                 <h1 class="lg:text-3xl font-bold lg:ml-4 ">Donate Bangladesh</h1>
@@ -25,8 +25,8 @@
             </div>
         </nav>
         <div class="flex justify-center mt-14 pb-5 space-x-14 ">
-                <button id="donation" class="bg-primary text-xl font-bold px-6 py-2 rounded-xl">Donation</button>
-                <button id="history" class="border-2 text-xl font-bold px-8 py-2 rounded-xl">History</button>
+                <button id="donationBtn" class="bg-primary text-xl font-bold px-6 py-2 rounded-xl">Donation</button>
+                <button id="historyBtn" class="border-2 text-xl font-bold px-8 py-2 rounded-xl">History</button>
         </div>
 
     </div>
@@ -35,9 +35,9 @@
 
 
     <!-- Donation Section Starts Here -->
-    <div class="mx-auto w-[80%] m-20 space-y-20 ">
+    <div id="donation" class="mx-auto w-[80%] m-20 space-y-20 ">
 
-        <div class="mx-30 grid grid-cols-2  border-2 shadow-lg rounded-2xl p-8  mb-6 mx-2">
+        <div class="mx-30 grid grid-cols-2  border-2 shadow-lg rounded-2xl p-8 space-x-6 mb-6 mx-2">
             <div>
                 <img class="" src="./assets/img/noakhali.png" alt="">
             </div>
@@ -55,7 +55,7 @@
             </div>
          </div>
 
-         <div class="mx-30 grid grid-cols-2  border-2 shadow-lg rounded-2xl p-8  my-4 mx-2">
+         <div class="mx-30 grid grid-cols-2  border-2 shadow-lg rounded-2xl p-8 space-x-6 my-4 mx-2">
             <div>
                 <img class="" src="./assets/img/feni.png" alt="">
             </div>
@@ -73,7 +73,7 @@
             </div>
          </div>
 
-         <div class="mx-30 grid grid-cols-2  border-2 shadow-lg rounded-2xl p-8  my-4 mx-2">
+         <div class="mx-30 grid grid-cols-2  border-2 shadow-lg rounded-2xl p-8 space-x-6 my-4 mx-2">
             <div>
                 <img class="" src="./assets/img/quota-protest.png" alt="">
             </div>
@@ -95,7 +95,17 @@
     <!-- Donation Section Ends Here -->
 
 
+    <!-- History Section Starts Here -->
+
+    <div id="history" class="hidden mx-auto w-[80%] m-20 space-y-20 ">
+
+    </div>
+    <!-- History Section Ends Here -->
+
+
+
     <script src="assets/JS/main.js"></script>
+    <script src="assets/JS/blog.js"></script>
     <script>
         tailwind.config = {
           theme: {
