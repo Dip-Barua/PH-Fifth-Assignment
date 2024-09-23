@@ -9,24 +9,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-lexend">
-    
+
     <!-- Top-Nav starts here -->
-    <div class="sticky top-0 z-10 bg-white bg-opacity-50 backdrop-blur-lg">
-        <nav class="flex justify-between items-center py-10 lg:px-52 px-4 bg-[#F9F7F3] bg-opacity-50 backdrop-blur-lg">
-            <button id="home" class="bg-primary text-xl px-8 py-1 font-bold rounded-xl ">Home</button>
-            <div class="flex items-center justify-between ml-4">
+    <div class=" sticky top-0 z-10 bg-white bg-opacity-50 backdrop-blur-lg">
+        <nav class="flex justify-between items-center pt-4 sm:py-10 px-6 sm:px-40 bg-[#F9F7F3] bg-opacity-50 backdrop-blur-lg">
+            <button id="home" class="bg-primary text-xl px-6 sm:px-8 py-1 font-bold rounded-xl  ">Home</button>
+            <div class="flex flex-col sm:flex-row items-center justify-between ml-4">
                 <img class="w-8 lg:w-[30px]" src="./assets/img/logo.png" alt="">
-                <h1 class="lg:text-3xl font-bold lg:ml-4 ">Donate Bangladesh</h1>
+                <h1 class=" text-l text-center sm:text-3xl font-bold lg:ml-4 ">Donate Bangladesh</h1>
             </div>
-            <div class="flex items-center">
-                <img class="w-8 " src="./assets/img/coin.png" alt="">
-                <h1 class="text-xl font-bold text-secondary ml-3">
-                    <span id="balance">5500</span> BDT
+            <div class="flex items-center gap-1 sm:gap-3">
+                <img class="w-6 sm:w-8 " src="./assets/img/coin.png" alt="">
+                <h1 class="text-l sm:text-xl flex gap-1 font-bold text-secondary mr-3">
+                    <span id="balance">5500</span>BDT
                 </h1>
             </div>
         </nav>
-        <div class="flex justify-center mt-14 pb-5 space-x-14 ">
-                <button id="donationBtninBlog" class="border-2 text-xl font-bold px-6 py-2 rounded-xl">Donation</button>
+        <div class="flex justify-center gap-4 sm:justify-center mt-8 sm:mt-14 pb-5 sm:space-x-14 ">
+            <button id="donationBtninBlog" class="border-2 text-xl font-bold px-6 py-2 rounded-xl">Donation</button>
                 <button id="historyBtninBlog" class="border-2 text-xl font-bold px-8 py-2 rounded-xl">History</button>
         </div>
 
@@ -35,15 +35,15 @@
 
 
     <!-- Faq section starts here -->
-    <div class="w-[80%] mx-auto p-8 bg-white border rounded-xl shadow-sm mt-16">
-        <h1 class="text-4xl font-bold text-left my-8">Important FAQ</h1>
+    <div class="w-[80%] mx-auto p-8 bg-white border rounded-xl shadow-sm mt-16 mb-16">
+        <h1 class="text-2xl sm:text-4xl font-bold text-center sm:text-left my-8">Important FAQ</h1>
 
         <div class="space-y-4">
             <div>
                 <button onclick="toggle('answer1')" class="w-full text-left py-4 text-xl px-4 bg-gray-200 rounded-lg focus:outline-none">
                     What is Document Object model (DOM)?
                 </button>
-                <div id="answer1" class="hidden p-4 border-t border-gray-200">
+                <div id="answer1" class=" text-md sm:text-xl hidden p-4 ">
                     The DOM is a programming interface that represents the structure of a document (like an HTML or XML file) as a tree of objects. Each node in the tree corresponds to a part of the document, such as elements, attributes, and text.
                 </div>
             </div>
@@ -52,13 +52,13 @@
                 <button onclick="toggle('answer2')" class="w-full text-left py-4 text-xl px-4 bg-gray-200 rounded-lg focus:outline-none">
                     How do you select an element from DOM?
                 </button>
-                <div id="answer2" class="hidden p-4 border-t border-gray-200">
+                <div id="answer2" class="text-md sm:text-xl hidden p-4">
                     <p class="mb-2 font-semibold">Selecting an Element from the DOM:</p>
                     <ul class="list-disc list-inside ml-5">
-                        <li><code>document.getElementById('id')</code></li>
-                        <li><code>document.querySelector('.class')</code></li>
-                        <li><code>document.getElementsByClassName('class')</code></li>
-                        <li><code>document.getElementsByTagName('tag')</code></li>
+                        <li><code></code>document. getElementById('id')</li></code></li>
+                        <li><code>document. querySelector('.class')</code></li>
+                        <li><code>document. getElementsByClassName ('class')</code></li>
+                        <li><code>document. getElementsByTagName ('tag')</code></li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                 <button onclick="toggle('answer3')" class="w-full text-left py-4 text-xl px-4 bg-gray-200 rounded-lg focus:outline-none">
                     What is event delegation in the context of DOM, and why is it useful?
                 </button>
-                <div id="answer3" class="hidden p-4 border-t border-gray-200">
+                <div id="answer3" class="text-md sm:text-xl hidden p-4">
                     Event delegation is a technique that allows you to handle events at a higher level in the DOM rather than attaching event handlers to individual elements. It's useful for optimizing performance and managing dynamic content because it reduces the number of event listeners needed and ensures that new elements can automatically inherit the event handler.
                 </div>
             </div>
@@ -76,17 +76,17 @@
                 <button onclick="toggle('answer4')" class="w-full text-left py-4 text-xl px-4 bg-gray-200 rounded-lg focus:outline-none">
                     How do you manipulate an element's attributes and styles using the DOM?
                 </button>
-                <div id="answer4" class="hidden p-4 border-t border-gray-200">
+                <div id="answer4" class=" text-md sm:text-xl hidden p-4">
                     <p class="mb-4 text-lg font-medium">You can manipulate attributes and styles using:</p>
                     <ul class="list-disc list-inside space-y-2 ml-6">
                         <li>
-                            <strong>Attributes:</strong> <code>element.setAttribute('attr', 'value')</code> or 
-                            <code>element.getAttribute('attr')</code>
+                            <strong>Attributes:</strong> <code>element.setAttribute ('attr', 'value')</code> or 
+                            <code>element.getAttribute ('attr')</code>
                         </li>
                         <li>
                             <strong>Styles:</strong> <code>element.style.property = 'value'</code> 
                             (e.g., <code>element.style.color = 'red'</code>) or by adding/removing CSS classes with 
-                            <code>element.classList.add('class')</code> or <code>element.classList.remove('class')</code>
+                            <code>element.classList.add ('class')</code> or <code>element.classList. remove ('class')</code>
                         </li>
                     </ul>
                 </div>
