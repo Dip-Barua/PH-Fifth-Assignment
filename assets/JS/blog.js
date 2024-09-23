@@ -44,17 +44,17 @@ document.addEventListener("DOMContentLoaded", function() {
     // Page Header button ends here
 
 
-    // Faq Toggler starts here
-
+// FAQ Toggler starts here
 function toggle(id) {
-    const answers = document.querySelectorAll('.p-4.border-t');
+    const answers = document.querySelectorAll('div[id^="answer"]');
     answers.forEach(answer => {
         if (answer.id !== id) {
             answer.classList.add('hidden');
         }
     });
 
-    const answer = document.getElementById(id);
-    answer.classList.toggle('hidden');
+    const answerToToggle = document.getElementById(id);
+    answerToToggle.classList.toggle('hidden');
 }
+
     // Faq Toggler ends here

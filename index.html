@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project_5</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,7 +21,7 @@
             <div class="flex items-center gap-1 sm:gap-3">
                 <img class="w-6 sm:w-8 " src="./assets/img/coin.png" alt="">
                 <h1 class="text-l sm:text-xl gap-1 flex font-bold text-secondary mr-3">
-                    <span id="balance">5500</span>BDT
+                    <span id="currentBalance">5500</span>BDT
                 </h1>
             </div>
         </nav>
@@ -45,13 +46,13 @@
             <div class="space-y-6 mt-4">
                 <div class="bg-[#1111110D] flex w-[130px] rounded-xl p-2 mx-auto sm:ml-0">
                     <img width="20px" height="10px" src="./assets/img/coin.png" alt="">
-                    <h1 class="ml-3"><span>0</span> BDT</h1>
+                    <h1 class="ml-3"><span id="balance1">0</span> BDT</h1>
                 </div>
-                <h1 class="font-bold text-lg sm:text-2xl text-center sm:ml-0">Donate for Flood at Noakhali, Bangladesh</h1>
+                <h1 class="font-bold text-lg sm:text-2xl text-center sm:text-left sm:ml-0">Donate for Flood at Noakhali, Bangladesh</h1>
                 <p class="text-secondary text-sm sm:text-lg text-justify sm:ml-0"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '');"  placeholder="Write Donation Amount" class="input input-bordered w-full"/><br>          
+                <input type="text"  id="donationForNoakhali" placeholder="Write Donation Amount" class="input input-bordered w-full"/><br>          
                 <div class="flex justify-center">
-                    <button onclick="my_modal_4.showModal()"  class="w-2/3 sm:w-full bg-primary text-lg sm:text-xl  font-bold py-2 sm:py-3 rounded-lg">Donate Now</button>
+                    <button onclick="my_modal_4.showModal()" id="donation1" class="w-2/3 sm:w-4/12 bg-primary text-lg sm:text-xl  font-bold py-2 sm:py-3 rounded-lg">Donate Now</button>
 
                 </div>
             </div>
@@ -66,13 +67,13 @@
             <div class="space-y-6 mt-4">
                 <div class="bg-[#1111110D] flex w-[130px] rounded-xl p-2 mx-auto sm:ml-0">
                     <img width="20px" height="10px" src="./assets/img/coin.png" alt="">
-                    <h1 class="ml-3"><span>600</span> BDT</h1>
+                    <h1 class="ml-3"><span id="balance2">600</span> BDT</h1>
                 </div>
-                <h1 class="font-bold text-lg sm:text-2xl text-center sm:ml-0">Donate for Flood Relief in Feni,Bangladesh</h1>
+                <h1 class="font-bold text-lg sm:text-2xl text-center sm:text-left sm:ml-0">Donate for Flood Relief in Feni,Bangladesh</h1>
                 <p class="text-secondary text-sm sm:text-lg text-justify sm:ml-0">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-                <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full"/><br>          
+                <input type="text" id="donationForFeni" placeholder="Write Donation Amount" class="input input-bordered w-full"/><br>          
                 <div class="flex justify-center">
-                    <button onclick="my_modal_4.showModal()"  class="w-2/3 sm:w-full bg-primary text-lg sm:text-xl  font-bold py-2 sm:py-3 rounded-lg">Donate Now</button>
+                    <button onclick="my_modal_4.showModal()" id="donation2" class="w-2/3 sm:w-4/12 bg-primary text-lg sm:text-xl  font-bold py-2 sm:py-3 rounded-lg">Donate Now</button>
 
                 </div>                </div>
             </div>
@@ -86,15 +87,16 @@
             <div class="space-y-6 mt-4">
                 <div class="bg-[#1111110D] flex w-[130px] rounded-xl p-2">
                     <img width="20px" height="10px" src="./assets/img/coin.png" alt="">
-                    <h1 class="ml-3"><span>2400</span> BDT</h1>
+                    <h1 class="ml-3"><span id="balance3">2400</span> BDT</h1>
                 </div>
                 <h1 class="font-bold text-lg sm:text-2xl text-center sm:text-left sm:ml-0">Aid for Injured in the Quota Movement</h1>
                 <p class="text-secondary text-sm sm:text-lg text-justify sm:ml-0"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-                <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full"/><br>          
+                <input type="text" id="aidForInjured" placeholder="Write Donation Amount" class="input input-bordered w-full"/><br>          
                 <div class="flex justify-center">
-                    <button onclick="my_modal_4.showModal()"  class="w-2/3 sm:w-full bg-primary text-lg sm:text-xl  font-bold py-2 sm:py-3 rounded-lg">Donate Now</button>
+                    <button onclick="my_modal_4.showModal()" id="donation3" class="w-2/3 sm:w-4/12 bg-primary text-lg sm:text-xl  font-bold py-2 sm:py-3 rounded-lg">Donate Now</button>
 
-                </div>                 </div>
+                </div>        
+                     </div>
             </div>
          </div>
 
@@ -109,7 +111,9 @@
     </div>
     <!-- History Section Ends Here -->
 
-
+<footer>
+    <p class="text-center text-secondary my-4">A hands on Keys JS program by Dip</p>
+</footer>
     <!-- DaisyUi Modal Section Starts here -->
     <dialog id="my_modal_4" class="modal">
         <div class="modal-box flex flex-col w-2/6 max-w-3xl text-center items-center justify-center">
@@ -129,6 +133,7 @@
 
     <script src="assets/JS/main.js"></script>
     <script src="assets/JS/blog.js"></script>
+    <script src="assets/JS/calculation.js"></script>
     <script>
         tailwind.config = {
           theme: {
