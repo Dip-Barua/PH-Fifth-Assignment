@@ -36,66 +36,74 @@
 
 
     <!-- Faq section starts here -->
-    <div class="w-[80%] mx-auto p-8 bg-white border rounded-xl shadow-sm mt-16 mb-16">
-        <h1 class="text-2xl sm:text-4xl font-bold text-center sm:text-left my-8">Important FAQ</h1>
-
-        <div class="space-y-4">
-            <div>
-                <button onclick="toggle('answer1')" class="w-full text-left py-4 text-xl px-4 bg-gray-200 rounded-lg focus:outline-none">
-                    What is Document Object model (DOM)?
-                </button>
-                <div id="answer1" class=" text-md sm:text-xl hidden p-4 ">
-                    The DOM is a programming interface that represents the structure of a document (like an HTML or XML file) as a tree of objects. Each node in the tree corresponds to a part of the document, such as elements, attributes, and text.
-                </div>
-            </div>
-
-            <div>
-                <button onclick="toggle('answer2')" class="w-full text-left py-4 text-xl px-4 bg-gray-200 rounded-lg focus:outline-none">
-                    How do you select an element from DOM?
-                </button>
-                <div id="answer2" class="text-md sm:text-xl hidden p-4">
-                    <p class="mb-2 font-semibold">Selecting an Element from the DOM:</p>
-                    <ul class="list-disc list-inside ml-5">
-                        <li><code></code>document. getElementById('id')</li></code></li>
-                        <li><code>document. querySelector('.class')</code></li>
-                        <li><code>document. getElementsByClassName ('class')</code></li>
-                        <li><code>document. getElementsByTagName ('tag')</code></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div>
-                <button onclick="toggle('answer3')" class="w-full text-left py-4 text-xl px-4 bg-gray-200 rounded-lg focus:outline-none">
-                    What is event delegation in the context of DOM, and why is it useful?
-                </button>
-                <div id="answer3" class="text-md sm:text-xl hidden p-4">
-                    Event delegation is a technique that allows you to handle events at a higher level in the DOM rather than attaching event handlers to individual elements. It's useful for optimizing performance and managing dynamic content because it reduces the number of event listeners needed and ensures that new elements can automatically inherit the event handler.
-                </div>
-            </div>
-
-            <div>
-                <button onclick="toggle('answer4')" class="w-full text-left py-4 text-xl px-4 bg-gray-200 rounded-lg focus:outline-none">
-                    How do you manipulate an element's attributes and styles using the DOM?
-                </button>
-                <div id="answer4" class=" text-md sm:text-xl hidden p-4">
-                    <p class="mb-4 text-lg font-medium">You can manipulate attributes and styles using:</p>
-                    <ul class="list-disc list-inside space-y-2 ml-6">
-                        <li>
-                            <strong>Attributes:</strong> <code>element.setAttribute ('attr', 'value')</code> or 
-                            <code>element.getAttribute ('attr')</code>
-                        </li>
-                        <li>
-                            <strong>Styles:</strong> <code>element.style.property = 'value'</code> 
-                            (e.g., <code>element.style.color = 'red'</code>) or by adding/removing CSS classes with 
-                            <code>element.classList.add ('class')</code> or <code>element.classList. remove ('class')</code>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-
+    <section class="m-4 md:m-0 md:w-9/12 md:mx-auto">
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl bold font-medium">
+            1. What is the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+                The DOM is a programming interface that represents the structure of a document (like an HTML or XML file) as a tree of objects. Each node in the tree corresponds 
+                to a part of the document, such as elements, attributes, and text.
+            </p>
+          </div>
         </div>
-    </div>
+        <br />
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl bold font-medium">
+            2. How do you select an element from DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+                <p class="mb-2 font-semibold">Selecting an Element from the DOM:</p>
+                <ul class="list-disc list-inside ml-5">
+                    <li><code></code>document.getElementById('id')</li></code></li>
+                    <li><code>document.querySelector('.class')</code></li>
+                    <li><code>document.getElementsByClassName ('class')</code></li>
+                    <li><code>document.getElementsByTagName ('tag')</code></li>
+                </ul>
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl bold font-medium">
+            3. What is event delegation in the context of DOM, and why is it useful?
+          </div>
+          <div class="collapse-content">
+            <p>
+                Event delegation is a technique that allows you to handle events at a higher level in the DOM rather than attaching event handlers to individual elements. It's useful for optimizing performance and managing dynamic content because it reduces the number of event
+                 listeners needed and ensures that new elements can automatically inherit the event handler.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl bold font-medium">
+            4. How do you manipulate an element's attributes and styles using the DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+                <p class="mb-4 text-lg font-medium">You can manipulate attributes and styles using:</p>
+                <ul class="list-disc list-inside space-y-2 ml-6">
+                    <li>
+                        <strong>Attributes:</strong> <code>element.setAttribute('attr', 'value')</code> or 
+                        <code>element.getAttribute('attr')</code>
+                    </li>
+                    <li>
+                        <strong>Styles:</strong> <code>element.style.property = 'value'</code> 
+                        (e.g., <code>element.style.color = 'red'</code>) or by adding/removing CSS classes with 
+                        <code>element.classList.add ('class')</code> or <code>element.classList.remove('class')</code>
+                    </li>
+                </ul>
+            </p>
+          </div>
+        </div>
+      </section>
     <!-- Faq section ends here -->
 
     <footer>
