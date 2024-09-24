@@ -4,7 +4,7 @@ function isValidDonation(amount, balance) {
 }
 
 
-// using regx to approve numbers only 
+// using regx to approve only numbers 
 function getAmount(inputId) {
     const inputValue = document.getElementById(inputId).value;
     const match = inputValue.match(/^(\d+)(\.\d+)?$/); 
